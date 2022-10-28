@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/nicepage.css" media="screen">
   <link rel="stylesheet" href="css/My-Plan.css" media="screen">
   <script class="u-script" type="text/javascript" src="jquery.js" "="" defer=""></script>
+  <script class="u-script" type="text/javascript" src="javascript/common.js" defer=""></script>
     <script class=" u-script" type="text/javascript" src="nicepage.js" "="" defer=""></script>
     <meta name=" generator" content="Nicepage 4.16.0, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
@@ -91,20 +92,20 @@
   <section class="u-clearfix u-palette-1-dark-2 u-section-1" id="sec-e8db">
     <div class="u-clearfix u-sheet u-sheet-1">
       <div class="u-align-center u-border-2 u-border-grey-75 u-form u-form-1">
-        <form action="//publish.nicepage.com/Form/Process" method="POST"
+        <form 
           class="u-clearfix u-form-spacing-4 u-form-vertical u-inner-form" source="email" name="form"
           style="padding: 13px;">
           <div class="u-form-checkbox u-form-group u-label-top u-form-group-1">
             <input type="checkbox" id="checkbox-b2e7" name="checkbox" value="On">
-            <label for="checkbox-b2e7" class="u-custom-font u-font-ubuntu u-label u-label-1"><select id="teamSeason" style="color: black">
+            <label for="checkbox-b2e7" class="u-custom-font u-font-ubuntu u-label u-label-1"><select id="minMaxChoice" style="color: black">
               <option value="min_opt" style="color: black">Min</option>
               <option value="max_opt" style="color: black">Max</option>
-            </select> of <select id="teamSeason" style="color: black">
+            </select> of <select id="quantityChoice" style="color: black">
               <option value="2_opt" style="color: black">2</option>
               <option value="3_opt" style="color: black">3</option>
               <option value="4_opt" style="color: black">4</option>
             </select>
-            <select id="teamSeason" style="color: black">
+            <select id="typeChoice" style="color: black">
               <option value="meat_opt" style="color: black">meat</option>
               <option value="fish_opt" style="color: black">fish</option>
               <option value="veg_opt" style="color: black">vegetarian</option>
@@ -117,30 +118,25 @@
           </div> -->
           <div class="u-form-checkbox u-form-group u-label-top u-form-group-3">
             <input type="checkbox" id="checkbox-6126" name="checkbox-2" value="On">
-            <label for="checkbox-6126" class="u-custom-font u-font-ubuntu u-label u-label-3"><select id="teamSeason" style="color: black">
+            <label for="checkbox-6126" class="u-custom-font u-font-ubuntu u-label u-label-3"><select id="numDaysChoice" style="color: black">
               <option value="1meal_opt" style="color: black">1</option>
               <option value="2meals_opt" style="color: black">2</option>
             </select> meal per day</label>
           </div>
           <div class="u-form-checkbox u-form-group u-label-top u-form-group-4">
             <input type="checkbox" id="checkbox-ec66" name="checkbox-3" value="On">
-            <label for="checkbox-ec66" class="u-custom-font u-font-ubuntu u-label u-label-4"><select id="teamSeason" style="color: black">
+            <label for="checkbox-ec66" class="u-custom-font u-font-ubuntu u-label u-label-4"><select id="weekChoice" style="color: black">
               <option value="5week_opt" style="color: black">5</option>
               <option value="7week_opt" style="color: black">7</option>
             </select> week days</label>
           </div>
           <div class="u-align-center u-form-group u-form-submit u-label-top">
-            <input type="submit" value="submit" class="u-form-control-hidden">
-            <a href="#"
+            <a onclick="log()"
               class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-custom-font u-font-ubuntu u-hover-palette-1-light-1 u-palette-1-dark-1 u-radius-50 u-btn-1"><span
                 class="u-file-icon u-icon u-text-white"><img src="images/7358851-d25e1f6d.png"
                   alt=""></span>&nbsp;Generate
             </a>
           </div>
-          <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-          <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try
-            again. </div>
-          <input type="hidden" value="" name="recaptchaResponse">
         </form>
       </div>
       <div class="u-expanded-width u-table u-table-responsive u-table-1">
@@ -202,7 +198,7 @@
 
   <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-7945">
     <div class="u-clearfix u-sheet u-sheet-1">
-      <p class="u-small-text u-text u-text-variant u-text-1">Sample text. Click to select the Text Element.</p>
+      <p class="u-small-text u-text u-text-variant u-text-1">MealGen - a meal plan generator | <i>since @2022</i></p>
     </div>
   </footer>
 

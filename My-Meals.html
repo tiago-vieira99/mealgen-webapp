@@ -9,6 +9,9 @@
   <title>My Meals</title>
   <link rel="stylesheet" href="css/nicepage.css" media="screen">
   <link rel="stylesheet" href="css/My-Meals.css" media="screen">
+  <link rel="stylesheet" href="css/modalDialogBox.css" media="screen">
+  <script class="u-script" type="text/javascript" src="javascript/common/modalDialogBox.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="javascript/common/constants.js" defer=""></script>
   <script class="u-script" type="text/javascript" src="jquery.js" "="" defer=""></script>
     <script class=" u-script" type="text/javascript" src="nicepage.js" "="" defer=""></script>
     <meta name=" generator" content="Nicepage 4.16.0, nicepage.com">
@@ -105,7 +108,7 @@
         <span style="font-size: 0.875rem;">All</span>
         <br>
       </a>
-      <a 
+      <a onclick="modalBox(NEW_MEAL_ACTION)"
         class="u-btn u-button-style u-none u-text-hover-palette-1-dark-1 u-text-palette-1-light-1 u-btn-5">Add New
         Meal&nbsp;&nbsp;<span class="u-file-icon u-icon u-text-palette-1-light-1"><img src="images/1828919-7d1fe43b.png"
             alt=""></span>
@@ -125,13 +128,13 @@
                 <li>Sample Item 2</li>
                 <li>Sample Item 3</li>
               </ul>
-              <a href=""
+              <a onclick="modalBox(DEL_MEAL_ACTION)"
                 class="u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-custom-font u-font-ubuntu u-none u-text-palette-2-light-1 u-btn-6"><span
                   class="u-file-icon u-icon u-text-palette-2-light-1"><img src="images/3096673-499f8a26.png"
                     alt=""></span>
                 <span style="font-size: 0.75rem;"></span>
               </a>
-              <a href=""
+              <a onclick="modalBox(UPDATE_MEAL_ACTION)"
                 class="u-active-none u-border-2 u-border-hover-palette-4-dark-2 u-border-palette-4-dark-1 u-btn u-button-style u-custom-font u-font-ubuntu u-hover-none u-none u-text-hover-grey-50 u-text-palette-4-light-1 u-btn-7">edit</a>
             </div>
           </div>
@@ -148,12 +151,12 @@
                 <li>Sample Item 2</li>
                 <li>Sample Item 3</li>
               </ul>
-              <a href=""
+              <a onclick="modalBox(DEL_MEAL_ACTION)"
                 class="u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-custom-font u-font-ubuntu u-none u-text-palette-2-light-1 u-btn-8"><span
                   class="u-file-icon u-icon u-text-palette-2-light-1"><img src="images/3096673-499f8a26.png"
                     alt=""></span>
               </a>
-              <a href=""
+              <a onclick="modalBox(UPDATE_MEAL_ACTION)"
                 class="u-active-none u-border-2 u-border-hover-palette-4-dark-2 u-border-palette-4-dark-1 u-btn u-button-style u-custom-font u-font-ubuntu u-hover-none u-none u-text-hover-grey-50 u-text-palette-4-light-1 u-btn-9">edit</a>
             </div>
           </div>
@@ -170,12 +173,12 @@
                 <li>Sample Item 2</li>
                 <li>Sample Item 3</li>
               </ul>
-              <a href=""
+              <a onclick="modalBox(DEL_MEAL_ACTION)"
                 class="u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-custom-font u-font-ubuntu u-none u-text-palette-2-light-1 u-btn-10"><span
                   class="u-file-icon u-icon u-text-palette-2-light-1"><img src="images/3096673-499f8a26.png"
                     alt=""></span>
               </a>
-              <a href=""
+              <a onclick="modalBox(UPDATE_MEAL_ACTION)"
                 class="u-active-none u-border-2 u-border-hover-palette-4-dark-2 u-border-palette-4-dark-1 u-btn u-button-style u-custom-font u-font-ubuntu u-hover-none u-none u-text-hover-grey-50 u-text-palette-4-light-1 u-btn-11">edit</a>
             </div>
           </div>
@@ -187,7 +190,7 @@
 
   <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-7945">
     <div class="u-clearfix u-sheet u-sheet-1">
-      <p class="u-small-text u-text u-text-variant u-text-1">Sample text. Click to select the Text Element.</p>
+      <p class="u-small-text u-text u-text-variant u-text-1">MealGen - a meal plan generator | <i>since @2022</i></p>
     </div>
   </footer>
 
